@@ -50,11 +50,11 @@ const CountryDetails = () => {
   console.log(countryDetails.populationData);
   const populationChartData = (countryDetails.populationData && countryDetails.populationData.length) > 0
   ? {
-      labels: countryDetails.populationData.map((data) => data.year), // X-axis labels (years)
+      labels: countryDetails.populationData.map((data) => data.year), 
       datasets: [
         {
-          label: 'Population', // Dataset label
-          data: countryDetails.populationData.map((data) => data.value), // Y-axis data (population)
+          label: 'Population',
+          data: countryDetails.populationData.map((data) => data.value), 
           fill: false,
           borderColor: '#4b9a9a',
           tension: 0.1,
